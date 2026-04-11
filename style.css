@@ -1,0 +1,57 @@
+/* general page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+   text-align: center;
+  padding: 40px;
+   margin: 0;
+}
+
+  /* main heading */
+h1  {
+     color: #333;
+     margin-bottom: 20px;
+}
+/* input field  */
+ #api-input {
+     padding: 10px;
+     width: 250px;
+     font-size: 16px;
+     border: 2px solid #ccc;
+     border-radius: 5px;
+ }
+
+/* button  styling */
+#api-btn{
+     padding: 10px 20px;
+     font-size: 16px;
+     border: none;
+    background-color: #0077cc;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+#api-btn:hover {
+    background-color: #005fa3;
+}
+
+ /*results container */
+#api-results {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#api-results img {
+    margin-top: 15px;
+    max-width: 200px;
+    border-radius: 10px;
+}
