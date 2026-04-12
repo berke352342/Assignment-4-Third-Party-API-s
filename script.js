@@ -9,6 +9,10 @@
     // Build the API URL
     const apiUrl = `https://www.omdbapi.com/?apikey=${apiKey}&t=${movieTitle}`;
     const resultsDiv = document.getElementById("api-results");
+    if (!movieTitle) {
+    resultsDiv.innerHTML = "Please enter a movie name.";
+    return;
+}
     resultsDiv.innerHTML = "Loading...";
 
      //  Fetch data from OMDb API
