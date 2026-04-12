@@ -63,3 +63,6 @@ body {
 button:hover {
     background: #ff5500;
 }
+#api-results {
+    border: 1px solid #ccc;
+}
