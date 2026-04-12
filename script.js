@@ -23,6 +23,7 @@
                      <p><strong>Year:</strong> ${data.Year}</p>
                      <p><strong>Genre:</strong> ${data.Genre}</p>
                      <p><strong>Director:</strong> ${data.Director}</p>
+                     <p><strong>IMDB Rating:</strong> ${data.imdbRating}</p>
                      <p><strong>Plot:</strong> ${data.Plot}</p>
                      <img src="${data.Poster}" alt="${data.Title} Poster">
                 `;
