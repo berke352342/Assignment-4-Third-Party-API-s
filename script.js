@@ -8,12 +8,13 @@
 
     // Build the API URL
     const apiUrl = `https://www.omdbapi.com/?apikey=${apiKey}&t=${movieTitle}`;
+    const resultsDiv = document.getElementById("api-results");
+    resultsDiv.innerHTML = "Loading...";
 
      //  Fetch data from OMDb API
       fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
-            const resultsDiv = document.getElementById("api-results");
 
             // If movie is found
             if (data.Response === "True") {
@@ -35,3 +36,7 @@
              document.getElementById("api-results").innerHTML = `<p>Something went wrong.</p>`;
               });
 });
+window.onload = function () {
+    document.getElementById("api-input").value = "Batman";
+    document.getElementById("api-btn").click();
+}
